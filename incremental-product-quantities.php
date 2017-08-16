@@ -56,10 +56,6 @@ class Incremental_Product_Quantities {
 		
 		// Set WC Version Number 
 		add_action( 'init', array( $this, 'get_wc_version' ) );
-		
-		// Control Admin Notices
-		add_action( 'admin_notices', array( $this, 'thumbnail_plugin_notice' ) );
-		add_action( 'admin_init', array( $this, 'thumbnail_plugin_notice_ignore' ) );
 
 	}
 
@@ -261,17 +257,6 @@ class Incremental_Product_Quantities {
 		}
 	}
 	
-	/*
-	*	Make Admin Notice Dismissable
-	*/	
-	public function thumbnail_plugin_notice_ignore() {
-		global $current_user;
-		$user_id = $current_user->ID;
-		
-		if ( isset($_GET['wpbo_thumbnail_plugin_dismiss']) && '0' == $_GET['wpbo_thumbnail_plugin_dismiss'] ) {
-			add_user_meta($user_id, 'wpbo_thumbnail_input_notice', 'true', true);
-		}
-	}
 }
 
 endif;
