@@ -1,15 +1,18 @@
+# Redux
+**This plugin was abandoned by wpbackoffice with the last update around 2014, this fork is an attempt to keep the plugin working and I welcome any contributions**
+
 ## WooCommerce Advanced Product Quantities  
-Contributors: wpbackoffice
+Contributors: John McLaren, wpbackoffice and others
 
 Tags: woocommerce, product quantities, input values
 
-Donate Link: http://wpbackoffice.com/plugins/woocommerce-incremental-product-quantities/
+Donate Link: 
 
-Requires at least: 3.5
+Requires at least: 
 
-Tested up to: 4.1
+Tested up to: 
 
-Stable tag: 2.1.9
+Stable tag: 
 
 License: GPLv2
 
