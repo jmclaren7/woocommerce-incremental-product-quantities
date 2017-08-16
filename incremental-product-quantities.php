@@ -1,11 +1,11 @@
 <?php
 /*
-Plugin Name: WooCommerce Advanced Product Quantities
-Plugin URI: http://www.wpbackoffice.com/plugins/woocommerce-incremental-product-quantities/
-Description: Easily require your customers to buy a minimum / maximum / incremental amount of products to continue with their checkout. It is highly recommended to also install 'WooCommerce Thumbnail Input Quantities' to allow users to add your custom quantites from product thumbnails.
-Version: 2.1.9
-Author: WP BackOffice
-Author URI: http://www.wpbackoffice.com
+Plugin Name: WooCommerce Advanced Product Quantities Redux
+Plugin URI: 
+Description: Easily require your customers to buy a minimum / maximum / incremental amount of products to continue with their checkout.
+Version: 2.1.10
+Author: John McLaren (Originally WP BackOffice)
+Author URI: 
 */ 
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
