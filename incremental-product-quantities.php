@@ -262,39 +262,6 @@ class Incremental_Product_Quantities {
 	}
 	
 	/*
-	* 	General Admin Notice to Encourage users to download thumbnail input as well
-	*/	
-	public function thumbnail_plugin_notice() {
-
-		global $current_user;
-		$user_id = $current_user->ID; 
-
-		// Check if Thumbnail Plugin is activated	
-		if ( !in_array( 'woocommerce-thumbnail-input-quantities/woocommerce-thumbnail-input-quantity.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
-		
-			// Check if User has Dismissed this message already
-			if ( ! get_user_meta( $user_id, 'wpbo_thumbnail_input_notice' ) ) {
-				
-				echo '<div class="updated">
-			       <p><strong>Notice:</strong> It is highly recommended you install and activate the <a href="http://wordpress.org/plugins/woocommerce-thumbnail-input-quantities/" target="_blank">WooCommerce Thumbnail Input Quantites</a> plugin to display input boxes on products thumbnails. <a href="';
-			       
-			       // Echo the current url 
-			       echo site_url() . $_SERVER['REQUEST_URI'];
-			       
-			       // Echo notice variable as nth get variable with &
-			       if ( strpos( $_SERVER['REQUEST_URI'] , '?' ) !== false ) {
-				       echo '&wpbo_thumbnail_plugin_dismiss=0';
-				   // Echo notice variable as first get variable with ?
-			       } else {
-				       echo '?wpbo_thumbnail_plugin_dismiss=0';
-			       }
-			       
-			    echo '">Dismiss Notice</a></p></div>';
-			}
-		} 
-	}
-	
-	/*
 	*	Make Admin Notice Dismissable
 	*/	
 	public function thumbnail_plugin_notice_ignore() {
