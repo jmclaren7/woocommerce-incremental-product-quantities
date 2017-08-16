@@ -1,11 +1,12 @@
 <?php
 /*
 Plugin Name: WooCommerce Advanced Product Quantities Redux
-Plugin URI: https://github.com/jmclaren7/woocommerce-incremental-product-quantities/
+Plugin URI: https://github.com/jmclaren7/woocommerce-incremental-product-quantities
+GitHub Plugin URI: https://github.com/jmclaren7/woocommerce-incremental-product-quantities
 Description: Easily require your customers to buy a minimum / maximum / incremental amount of products to continue with their checkout.
 Version: 2.1.10
 Author: John McLaren (Originally WP BackOffice)
-Author URI: https://github.com/jmclaren7/woocommerce-incremental-product-quantities/
+Author URI: https://github.com/jmclaren7
 */ 
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
